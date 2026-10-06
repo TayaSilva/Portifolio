@@ -15,7 +15,7 @@ defineEmits(['navigate', 'home', 'pt', 'en', 'toggle-theme'])
     <div class="mx-auto grid min-h-[84px] w-[min(1180px,calc(100%-72px))] grid-cols-[1fr_auto_1fr] items-center gap-6 max-[700px]:min-h-[70px] max-[700px]:w-[min(calc(100%-40px),1180px)] max-[700px]:grid-cols-[1fr_auto] max-[700px]:grid-rows-[70px_44px]">
       <BrandLogo :is-dark="isDark" :label="t.homeLabel" @home="$emit('home')" />
 
-      <nav class="flex gap-10 max-[700px]:col-span-2 max-[700px]:row-start-2 max-[700px]:justify-between max-[700px]:gap-3 max-[700px]:border-t max-[700px]:border-line" :aria-label="t.navLabel">
+      <nav class="flex gap-10 max-[700px]:col-span-2 max-[700px]:row-start-2 max-[700px]:justify-between max-[700px]:gap-3" :aria-label="t.navLabel">
         <template v-for="(tab, index) in tabs" :key="tab.id">
         <span v-if="index > 0" class="self-center font-mono text-xs text-muted opacity-60 max-[700px]:hidden">/</span>
         <button

@@ -62,9 +62,9 @@ onUnmounted(() => {
 
     <div class="relative z-10 flex min-h-full items-center justify-center px-6 text-center max-[480px]:px-4">
       <div :class="['flex max-w-full flex-col items-center transition-[opacity,transform,filter] duration-600 ease-out motion-reduce:transition-none', isOpening ? 'scale-105 opacity-0 blur-sm' : 'scale-100 opacity-100 blur-0']">
-        <div class="font-serif text-[clamp(58px,12vw,148px)] font-medium leading-[.86] tracking-[-.045em] max-[480px]:flex max-[480px]:flex-col">
+        <div class="flex items-baseline justify-center gap-3 whitespace-nowrap font-serif text-[clamp(58px,12vw,148px)] font-medium leading-[.86] tracking-[-.045em] max-[480px]:gap-1 max-[480px]:text-[clamp(40px,14vw,80px)]">
           <span :class="['text-cream transition-[opacity,transform,filter] duration-700 ease-out motion-reduce:transition-none', isReady ? 'translate-y-0 opacity-100 blur-0' : 'translate-y-8 opacity-0 blur-sm']" :style="{ transitionDelay: '0ms' }">Taiane</span>
-          <span :class="['font-normal italic text-rose transition-[opacity,transform,filter] duration-700 ease-out motion-reduce:transition-none max-[480px]:mt-3', isReady ? 'translate-y-0 opacity-100 blur-0' : 'translate-y-8 opacity-0 blur-sm']" :style="{ transitionDelay: '200ms' }">Silva</span>
+          <span :class="['font-normal italic text-rose transition-[opacity,transform,filter] duration-700 ease-out motion-reduce:transition-none', isReady ? 'translate-y-0 opacity-100 blur-0' : 'translate-y-8 opacity-0 blur-sm']" :style="{ transitionDelay: '200ms' }">Silva</span>
         </div>
 
         <p :class="['mt-10 font-mono text-xs uppercase tracking-[.3em] text-cream transition-[opacity,transform,filter] duration-700 ease-out motion-reduce:transition-none max-[480px]:mt-8 max-[480px]:tracking-[.2em]', isReady ? 'translate-y-0 opacity-100 blur-0' : 'translate-y-8 opacity-0 blur-sm']" :style="{ transitionDelay: '400ms' }">
