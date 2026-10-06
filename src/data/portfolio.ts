@@ -1,4 +1,4 @@
-export interface Project { number: string; context: string; title: string; description: string; tags: string[] }
+export interface Project { number: string; context: string; title: string; description: string; tags: string[]; href: string }
 export interface TimelineEntry { period: string; role: string; place: string; description?: string }
 export interface SocialLink { label: string; value: string; href: string }
 export interface Tech { name: string; kind: string; desc: string }
@@ -8,7 +8,9 @@ export const techData: Tech[] = [
 ]
 
 export const projectData: Project[] = [
-  { number: '01', context: 'Pathbit', title: 'App web com React e Gluestack', description: 'Desenvolvimento de interface com React e Gluestack, com versionamento em Git e GitHub.', tags: ['React', 'Gluestack', 'Git / GitHub'] }, { number: '02', context: 'Pathbit', title: 'App mobile com React Native', description: 'Aplicativos mobile com React Native, Expo Go e Gluestack, testados em emulador no Android Studio.', tags: ['React Native', 'Expo Go', 'Gluestack'] }, { number: '03', context: 'Pathbit', title: 'Next.js e Tailwind', description: 'Projeto atual: boas práticas com ESLint, integração com backend e consumo de APIs testado no Insomnia.', tags: ['Next.js', 'Tailwind CSS', 'ESLint'] }
+  { number: '01', context: 'Projeto publicado', title: 'We School', description: 'Projeto web publicado com foco em interface, organização de conteúdo e experiência do usuário.', tags: ['Web', 'Interface'], href: 'https://we-school-88ka.vercel.app/' },
+  { number: '02', context: 'Projeto publicado', title: 'RE Pathbit', description: 'Projeto web publicado para a Pathbit, com interface responsiva e navegação orientada ao produto.', tags: ['React', 'Responsivo'], href: 'https://re-pathbit-5hod.vercel.app/' },
+  { number: '03', context: 'Projeto publicado', title: 'Kate Nascimento', description: 'Projeto web publicado com identidade visual e apresentação de conteúdo profissional.', tags: ['Web', 'Design'], href: 'https://kate-nascimento-ldxn6lk01-tayasilvas-projects.vercel.app/' }
 ]
 
 export const skills = ['React', 'Next.js', 'Vue', 'TypeScript', 'Tailwind CSS', 'React Native', 'Gluestack', 'Vite']

@@ -34,7 +34,7 @@ defineEmits(['submit'])
           </div>
 
           <div class="bg-line max-[900px]:hidden" aria-hidden="true" />
-          <ContactForm :t="t" :sent="sent" :is-dark="isDark" @submit="$emit('submit')" />
+          <ContactForm :t="t" :mailto="mailto" :sent="sent" :is-dark="isDark" @submit="$emit('submit')" />
         </div>
       </div>
     </div>

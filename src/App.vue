@@ -9,7 +9,7 @@ import ResumePage from './components/resume/ResumePage.vue'
 import TransitionCurtain from './components/common/TransitionCurtain.vue'
 import { usePortfolio } from './composables/usePortfolio'
 
-const { viewModel: v, tsImg, actions } = usePortfolio()
+const { viewModel: v, actions } = usePortfolio()
 </script>
 
 <template>
@@ -36,18 +36,8 @@ const { viewModel: v, tsImg, actions } = usePortfolio()
       <HomePage
         v-if="v.view === 'home'"
         :t="v.t"
-        :techs="v.techs"
-        :active-tech="v.activeTech"
-        :active-tech-number="v.activeTechNumber"
-        :spoke-style="v.spokeStyle"
-        :arch-style="v.archStyle"
-        :logo-style="v.logoStyle"
-        :logo-src="tsImg"
         :projects="v.projects"
         @contact="actions.goContact"
-        @move-tech="actions.moveAcrossTechStage"
-        @leave-tech="actions.resetTechStage"
-        @next-tech="actions.nextTech"
       />
 
       <ResumePage

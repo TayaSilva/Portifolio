@@ -67,7 +67,7 @@ onUnmounted(clearTypingTimer)
         <p class="font-mono text-xs uppercase tracking-[.24em] text-script">{{ t.resume }}</p>
         <h2 class="mt-5 font-serif text-[clamp(52px,8vw,112px)] font-medium leading-[.95] tracking-[-.025em]" :aria-label="`${t.resumeTitle} ${t.resumeAccent}`">
           {{ t.resumeTitle }}
-          <em :class="['font-normal text-script transition-[font-family] duration-300', accentFont]" aria-hidden="true">
+          <em :class="['font-normal text-script transition-[font-family] duration-300 max-[700px]:mt-3 max-[700px]:block', accentFont]" aria-hidden="true">
             {{ typedAccent }}<span class="ml-0.5 inline-block font-mono not-italic animate-pulse">|</span>
           </em>
         </h2>
